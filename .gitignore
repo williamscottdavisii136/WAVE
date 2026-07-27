@@ -1,0 +1,3 @@
+.wsd/receipts/
+*.out.txt
+.DS_Store
