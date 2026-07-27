@@ -1,0 +1,30 @@
+name: Repository Health
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'REPOSITORY_ACTIVATION_STATUS.md'
+      - 'control/**'
+      - '.github/copilot-instructions.md'
+      - '.github/workflows/repository-health.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  health:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Validate public relay activation files
+        shell: sh
+        run: |
+          set -eu
+          test -s REPOSITORY_ACTIVATION_STATUS.md
+          test -s .github/copilot-instructions.md
+          test -s control/repository-map.md
+          ! grep -R "PASSWORD=\|TOKEN=\|PRIVATE KEY\|RECOVERY CODE" REPOSITORY_ACTIVATION_STATUS.md control .github/copilot-instructions.md
+          echo "Public relay repository health check passed."
