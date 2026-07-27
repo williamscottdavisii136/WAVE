@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WAVE Terminal Emulator</title>
+  <link rel="stylesheet" href="wave-terminal.css" />
+</head>
+<body>
+  <main class="terminal" aria-label="WAVE terminal emulator">
+    <section id="screen" class="screen" aria-live="polite">
+      <div>WAVE Terminal Emulator</div>
+      <div>Mode: public-safe command emulation</div>
+      <div>Type <strong>help</strong> for commands.</div>
+    </section>
+    <form id="command-form" class="command-row" autocomplete="off">
+      <label for="command-input" class="prompt">WAVE&gt;</label>
+      <input id="command-input" name="command" autofocus aria-label="Command input" />
+      <button type="submit">Run</button>
+    </form>
+  </main>
+  <script src="wave-terminal.js"></script>
+</body>
+</html>
