@@ -1,0 +1,9 @@
+# WAVE zero-cost local system audit
+pwd
+date -u
+whoami
+uname -a
+df -h
+git status --short
+git branch --show-current
+git log --oneline -5
