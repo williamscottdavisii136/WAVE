@@ -1,0 +1,26 @@
+name: Validate Zero-Cost Controls
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: zero-cost-validation
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+      - name: Validate repository controls
+        env:
+          MAX_INCREMENTAL_SPEND_USD: "0"
+          WSD_ALLOW_PAID_FALLBACK: "0"
+          WSD_ALLOW_AUTO_TOPUP: "0"
+          WSD_ALLOW_CROSS_REPO: "0"
+        run: sh control.sh validate
