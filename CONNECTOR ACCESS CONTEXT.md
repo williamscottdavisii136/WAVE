@@ -4,7 +4,7 @@
 
 This public repository is a relay and status bridge. It is not the private case-work repository and must not contain private legal source files, sealed material, family-sensitive material, credentials, tokens, account recovery data, or attorney-client material.
 
-This file exists so future ChatGPT, Codex, Copilot, repository-agent, or human-operator sessions understand the GitHub connector access pattern and the account-switch failure mode.
+This file exists so future ChatGPT, Codex, Copilot, repository-agent, or human-operator sessions understand the GitHub connector access pattern, the account-switch failure mode, and the make-it-live activation path.
 
 ## Current known connector scope at time of writing
 
@@ -42,6 +42,49 @@ Required checks:
 4. Confirm whether the current connector has push/write permission.
 5. If the private case repo is not visible, do not use this public repo for private legal material.
 6. Use this repository only to post public-safe routing, receipt, and status information.
+
+## Make-it-live activation path
+
+This is the missing live instruction.
+
+WAVE does not hold the private case engine. WAVE is the public-safe relay/status lane that tells a future operator how to wake the private engine if that operator has authorized access.
+
+The live pattern is:
+
+`WAVE public-safe status -> authorized private repo access -> Issue 16 -> START_CASE_ENGINE -> GitHub Actions gateway workflow -> heartbeat -> continued inventory/work queue`
+
+### Exact public-safe instruction
+
+If a future authorized operator can access the private case repo, the operator must:
+
+1. Open `williamscottdavisii136/AI-Agents-and-AI-Chatbots-`.
+2. Open Issue #16: `LIVE WORK QUEUE — 5:14-CR-240-D United States v. Davis EDNC`.
+3. Comment one of these trigger phrases on Issue #16:
+
+   `START_CASE_ENGINE`
+
+   `CONTINUE_CASE_ENGINE`
+
+   `CASE_ENGINE_HEARTBEAT`
+
+4. If issue-comment activation does not work, manually run the private repo workflow:
+
+   `.github/workflows/5-14-CR-240-D United States v. Davis EDNC Gateway Engine.yml`
+
+5. Confirm that a heartbeat/status file or Issue #16 heartbeat comment appears.
+6. Continue the master document inventory and case-file naming work.
+
+### Signs the private project is alive
+
+The private project is alive only when at least one of these exists in the private repo:
+
+1. A recent `CASE_ENGINE_HEARTBEAT` comment on Issue #16.
+2. A recent successful GitHub Actions gateway workflow run.
+3. A refreshed live-status Markdown file.
+4. A refreshed master document inventory scaffold.
+5. A responsible operator comment stating the next concrete work step.
+
+If none of those exists, the project is dormant.
 
 ## Authorized gateway language
 
