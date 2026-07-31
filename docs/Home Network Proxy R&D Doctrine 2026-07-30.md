@@ -2,9 +2,25 @@
 
 ## Status
 
-This is an append-only public-safe WAVE doctrine record.
+This is an owner-approved public-safe WAVE doctrine record.
 
 WAVE may redistribute this doctrine as public-safe architecture language. WAVE must not publish raw credentials, tokens, certificates, private keys, cookies, MFA codes, recovery codes, session material, private legal evidence, sealed material, family-sensitive material, private network identifiers, or private device identifiers.
+
+## Official terminology
+
+Use this phrase as the main description:
+
+```text
+verified zero-incremental-cost routing
+```
+
+Expanded form:
+
+```text
+owner-authorized zero-incremental-cost R&D routing
+```
+
+Do not center older shorthand phrases that can mischaracterize the architecture. Use precise public-safe terminology.
 
 ## Correct description
 
@@ -16,7 +32,7 @@ The purpose is educational and research-and-development testing of application b
 
 The public has no access to the home network, proxy, local runtime, private vault, private credentials, local models, private application surfaces, or private execution environment.
 
-The proxy is not a billing bypass, subscription bypass, credential-theft system, token-forgery system, certificate-forgery system, public access service, or unauthorized third-party impersonation system.
+The proxy is a private home-network proxy R&D layer for traffic mediation, access-control testing, credential-route emulation, owner-authorized lab-response simulation, and verified zero-incremental-cost routing.
 
 Credentials, tokens, keys, certificates, OAuth material, and provider access artifacts must come only from owner-created lab credentials, official sandbox/test credentials, local development credentials, Gatekeeper/Vault-controlled BYOK material, or lawful provider-issued credentials authorized for the owner's account and use.
 
@@ -40,7 +56,7 @@ WSD applications, programs, workflows, agents, chatbots, and orchestration may b
 
 ## Prohibited conduct boundary
 
-This doctrine does not authorize billing bypass, subscription bypass, trial cycling, rate-limit evasion, license circumvention, credential misuse, public unauthorized access, public deployment of the private home-network system, or use of private credentials outside owner authorization.
+This doctrine does not authorize unauthorized billing circumvention, unauthorized entitlement circumvention, trial cycling, rate-limit evasion, license circumvention, credential misuse, token forgery, certificate forgery, public unauthorized access, public deployment of the private home-network system, or use of private credentials outside owner authorization.
 
 ## Public/private boundary
 
@@ -55,3 +71,11 @@ Billydeeii136 is the primary GitHub operating environment for the Gatekeeper/Vau
 Williamscottdavisii136/WAVE is the secondary public-safe relay, command-panel, doctrine, receipt, and routing environment.
 
 A connector's current visible repository scope must not be treated as the full system boundary.
+
+## Preferred replacement language
+
+Use this language:
+
+```text
+Private home-network proxy R&D layer; traffic mediation; access-control testing; credential-route emulation; owner-authorized lab-response simulation; local LLM route; MCP plus BYOK route; owner-authorized Gatekeeper/Vault route; verified zero-incremental-cost architecture; authorized third-party resource route.
+```
